@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply scroll-smooth;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-950 text-white font-sans antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  body.light {
+    @apply bg-slate-50 text-slate-900;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/10 dark:bg-white/5 backdrop-blur-sm border border-white/20 dark:border-white/10 rounded-2xl;
+  }
+
+  .glass-card-light {
+    @apply bg-white/80 backdrop-blur-sm border border-slate-200 rounded-2xl shadow-lg;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold 
+           hover:shadow-lg hover:shadow-indigo-500/30 transition-all duration-300 hover:scale-105 
+           active:scale-95 cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-xl border-2 border-indigo-500 text-indigo-400 font-semibold
+           hover:bg-indigo-500 hover:text-white transition-all duration-300 hover:scale-105
+           active:scale-95 cursor-pointer;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold mb-4;
+  }
+
+  .skill-badge {
+    @apply px-4 py-2 rounded-full text-sm font-medium bg-indigo-500/20 text-indigo-300 
+           border border-indigo-500/30 hover:bg-indigo-500/40 transition-all duration-200
+           dark:bg-indigo-500/20 dark:text-indigo-300;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #4f46e5;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6366f1;
+}
+
+/* Glow effects */
+.glow-indigo {
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+}
+
+.glow-purple {
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+}
+
+/* Animated gradient background */
+.animated-gradient {
+  background: linear-gradient(-45deg, #0f172a, #1e1b4b, #14142f, #1a1040);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Particle/orb effects */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.3;
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  33% { transform: translateY(-30px) translateX(15px); }
+  66% { transform: translateY(15px) translateX(-10px); }
+}
+
+/* Card hover effect */
+.project-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Timeline */
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.6);
+}
+
+/* Light mode adjustments */
+.light body {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+/* Loading spinner */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spinner {
+  border: 3px solid rgba(99, 102, 241, 0.3);
+  border-top-color: #6366f1;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
