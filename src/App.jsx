@@ -7,7 +7,6 @@ import About from './components/sections/About';
 import Skills from './components/sections/Skills';
 import Experience from './components/sections/Experience';
 import Projects from './components/sections/Projects';
-import GitHub from './components/sections/GitHub';
 import Education from './components/sections/Education';
 import Certifications from './components/sections/Certifications';
 import WhyHireMe from './components/sections/WhyHireMe';
@@ -37,7 +36,6 @@ function App() {
           <Skills />
           <Experience />
           <Projects />
-          <GitHub />
           <Education />
           <Certifications />
           <WhyHireMe />

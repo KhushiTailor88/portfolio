@@ -2,7 +2,7 @@ import React from 'react';
 import { useTheme } from '../context/ThemeContext';
 import { FiGithub, FiLinkedin, FiMail, FiHeart, FiExternalLink } from 'react-icons/fi';
 
-const GITHUB_USERNAME = 'khushitailor';
+const GITHUB_USERNAME = 'KhushiTailor88';
 
 const Footer = () => {
   const { isDark } = useTheme();
@@ -13,14 +13,13 @@ const Footer = () => {
     { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
-    { name: 'GitHub', href: '#github' },
     { name: 'Education', href: '#education' },
     { name: 'Contact', href: '#contact' },
   ];
 
   const socials = [
     { icon: <FiGithub size={18} />, href: `https://github.com/${GITHUB_USERNAME}`, label: 'GitHub' },
-    { icon: <FiLinkedin size={18} />, href: 'https://linkedin.com/in/khushitailor', label: 'LinkedIn' },
+    { icon: <FiLinkedin size={18} />, href: 'https://www.linkedin.com/in/khushi-tailor-ab6b9a2ba/', label: 'LinkedIn' },
     { icon: <FiMail size={18} />, href: 'mailto:khushitailor138@gmail.com', label: 'Email' },
   ];
 

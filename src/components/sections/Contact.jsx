@@ -13,15 +13,15 @@ const SOCIAL_LINKS = [
   {
     icon: <FiLinkedin size={20} />,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/khushitailor',
-    href: 'https://linkedin.com/in/khushitailor',
+    value: 'linkedin.com/in/khushi-tailor-ab6b9a2ba/',
+    href: 'https://www.linkedin.com/in/khushi-tailor-ab6b9a2ba/',
     color: 'from-blue-500 to-indigo-500',
   },
   {
     icon: <FiGithub size={20} />,
     label: 'GitHub',
-    value: 'github.com/khushitailor',
-    href: 'https://github.com/khushitailor',
+    value: 'github.com/KhushiTailor88',
+    href: 'https://github.com/KhushiTailor88',
     color: 'from-slate-500 to-slate-700',
   },
   {

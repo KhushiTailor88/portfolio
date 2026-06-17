@@ -128,10 +128,9 @@ const Hero = () => {
               </a>
             </div>
 
-            <div className="flex items-center gap-3 justify-center lg:justify-start">
               {[
-                { icon: <FiGithub size={18} />, href: 'https://github.com/khushitailor', label: 'GitHub' },
-                { icon: <FiLinkedin size={18} />, href: 'https://linkedin.com/in/khushitailor', label: 'LinkedIn' },
+                { icon: <FiGithub size={18} />, href: 'https://github.com/KhushiTailor88', label: 'GitHub' },
+                { icon: <FiLinkedin size={18} />, href: 'https://www.linkedin.com/in/khushi-tailor-ab6b9a2ba/', label: 'LinkedIn' },
                 { icon: <FiMail size={18} />, href: 'mailto:khushitailor138@gmail.com', label: 'Email' },
               ].map((s, i) => (
                 <a key={i} href={s.href} target={s.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer" aria-label={s.label}
