@@ -128,6 +128,7 @@ const Hero = () => {
               </a>
             </div>
 
+            <div className="flex items-center gap-3 justify-center lg:justify-start">
               {[
                 { icon: <FiGithub size={18} />, href: 'https://github.com/KhushiTailor88', label: 'GitHub' },
                 { icon: <FiLinkedin size={18} />, href: 'https://www.linkedin.com/in/khushi-tailor-ab6b9a2ba/', label: 'LinkedIn' },
