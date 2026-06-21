@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTheme } from '../../context/ThemeContext';
-import { FiMail, FiGithub, FiLinkedin, FiMapPin, FiSend, FiCheckCircle, FiCalendar, FiBriefcase } from 'react-icons/fi';
+import { FiMail, FiGithub, FiLinkedin, FiMapPin, FiSend, FiCheckCircle, FiCalendar, FiBriefcase, FiPhone, FiMessageCircle } from 'react-icons/fi';
 
 const SOCIAL_LINKS = [
   {
@@ -30,6 +30,13 @@ const SOCIAL_LINKS = [
     value: 'Jaipur, Rajasthan, India',
     href: null,
     color: 'from-green-500 to-emerald-500',
+  },
+  {
+    icon: <FiPhone size={20} />,
+    label: 'Phone',
+    value: '+91 7426061815',
+    href: 'tel:7426061815',
+    color: 'from-indigo-500 to-purple-500',
   },
 ];
 
@@ -109,8 +116,8 @@ const Contact = () => {
               <a href="/resume.pdf" download className="btn-secondary flex items-center gap-2">
                 <FiCheckCircle size={18} /> Resume
               </a>
-              <a href="https://calendly.com/khushitailor" target="_blank" rel="noopener noreferrer" className={`px-6 py-3 rounded-xl border-2 border-purple-500 text-purple-400 font-semibold hover:bg-purple-500 hover:text-white transition-all flex items-center gap-2`}>
-                <FiCalendar size={18} /> Schedule a Call
+              <a href="tel:7426061815" className={`px-6 py-3 rounded-xl border-2 border-purple-500 text-purple-400 font-semibold hover:bg-purple-500 hover:text-white transition-all flex items-center gap-2`}>
+                <FiPhone size={18} /> Call Me
               </a>
             </div>
           </div>
@@ -202,23 +209,33 @@ const Contact = () => {
                 </div>
               )}
 
-              <button
-                type="submit"
-                disabled={status.loading}
-                className="btn-primary w-full flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
-              >
-                {status.loading ? (
-                  <>
-                    <div className="w-4 h-4 spinner" />
-                    Sending...
-                  </>
-                ) : (
-                  <>
-                    <FiSend size={16} />
-                    Send Message
-                  </>
-                )}
-              </button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button
+                  type="submit"
+                  disabled={status.loading}
+                  className="btn-primary flex-1 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                >
+                  {status.loading ? (
+                    <>
+                      <div className="w-4 h-4 spinner" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <FiSend size={16} />
+                      Send Message
+                    </>
+                  )}
+                </button>
+                <a
+                  href="https://wa.me/917426061815"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 rounded-xl bg-green-500 text-white font-bold hover:bg-green-600 transition-all flex items-center justify-center gap-2 shadow-lg shadow-green-500/20"
+                >
+                  <FiMessageCircle size={18} /> WhatsApp Me
+                </a>
+              </div>
             </form>
           </div>
         </div>

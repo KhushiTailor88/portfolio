@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTheme } from '../../context/ThemeContext';
 import { FiGithub, FiExternalLink, FiStar, FiGitBranch, FiCode, FiSearch } from 'react-icons/fi';
 
-const GITHUB_USERNAME = 'khushitailor';
+const GITHUB_USERNAME = 'KhushiTailor88';
 
 const featuredProjects = [
   {
@@ -12,7 +12,7 @@ const featuredProjects = [
     tech: ['React.js', 'Node.js', 'Supabase', 'PostgreSQL', 'Tailwind CSS', 'Zustand'],
     emoji: '📋',
     color: 'from-indigo-600 to-violet-600',
-    github: `https://github.com/${GITHUB_USERNAME}/task-management-saas`,
+    github: `https://github.com/${GITHUB_USERNAME}/task-api`,
     impact: 'Built a production-ready task management platform with real-time collaboration capabilities.',
     features: ['Real-time Tracking', 'Role Auth', 'Dashboard Analytics', 'Advanced Filtering'],
   },
@@ -23,7 +23,7 @@ const featuredProjects = [
     tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'JWT'],
     emoji: '🏠',
     color: 'from-rose-500 to-pink-600',
-    github: `https://github.com/${GITHUB_USERNAME}/airbnb-clone`,
+    github: `https://github.com/${GITHUB_USERNAME}/wander-lust`,
     impact: 'Developed a scalable full-stack booking platform using MERN architecture.',
     features: ['Property Listing', 'JWT Auth', 'Booking System', 'REST APIs'],
   },
@@ -34,7 +34,7 @@ const featuredProjects = [
     tech: ['Java', 'JSP', 'JDBC', 'MySQL'],
     emoji: '🏨',
     color: 'from-amber-500 to-orange-600',
-    github: `https://github.com/${GITHUB_USERNAME}/hotel-management-system`,
+    github: `https://github.com/${GITHUB_USERNAME}/https---github.com-KhushiTailor88-HOTEL_MANAGEMENT`,
     impact: 'Built a complete hotel operations management solution.',
     features: ['Room Booking', 'Check-in/out', 'Billing System', 'Admin Dashboard'],
   },
@@ -45,7 +45,7 @@ const featuredProjects = [
     tech: ['React.js', 'JavaScript', 'Tailwind CSS', 'Node.js', 'Express.js'],
     emoji: '💰',
     color: 'from-green-500 to-emerald-600',
-    github: `https://github.com/${GITHUB_USERNAME}/khushi-finance`,
+    github: `https://github.com/${GITHUB_USERNAME}?tab=repositories`,
     live: 'https://khushi-finance.vercel.app',
     impact: 'Real-world business platform solving actual business needs.',
     features: ['Service Showcase', 'Lead Generation', 'SEO Optimized', 'Inquiry Forms'],
